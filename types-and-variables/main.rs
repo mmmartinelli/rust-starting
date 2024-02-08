@@ -1,3 +1,6 @@
+const ONE:u8 = 1;
+static TWO:u8 = 2;   // In-memory constant
+
 fn main()
 {
     // Int
@@ -30,6 +33,12 @@ fn main()
     println!("It's {}!", mboolean);
     mboolean = !mboolean;
     println!("Now It's {}!", mboolean);
+
+    // Constants
+    const PI:f32 = 3.14;
+    println!("PI is a constant and its value is {}", PI);
+    println!("One is a global constant and its value is {}", ONE);
+    println!("Two is a global in-memory constant and its value is {}", TWO);
 }
 
 /*
